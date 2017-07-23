@@ -3,6 +3,7 @@ package com.polly.kotlinairhorn
 import android.media.MediaPlayer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
@@ -12,8 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val airhorn : ImageButton = findViewById(R.id.airhorn_button) as ImageButton
         airhorn.setOnClickListener {
-            val mediaPlayer : MediaPlayer = MediaPlayer.create(this, R.raw.airhorn)
-            mediaPlayer.start()
+            MediaPlayer.create(this, R.raw.airhorn).apply {
+                start()
+                setOnCompletionListener { release() }
+            }
         }
     }
 }
