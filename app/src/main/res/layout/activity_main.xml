@@ -15,6 +15,14 @@
         app:layout_constraintBottom_toTopOf="@+id/piano_button"
         style="@style/imagebutton" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/airhorn_button"
+        app:layout_constraintEnd_toEndOf="@id/airhorn_button"
+        app:layout_constraintTop_toBottomOf="@id/airhorn_button"
+        android:text="transient can duck"/>
+
     <ImageButton
         android:id="@+id/sadface_button"
         app:srcCompat="@drawable/sad_face"
@@ -25,6 +33,14 @@
         style="@style/imagebutton"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/sadface_button"
+        app:layout_constraintEnd_toEndOf="@id/sadface_button"
+        app:layout_constraintTop_toBottomOf="@id/sadface_button"
+        android:text="transient"/>
+
     <ImageButton
         android:id="@+id/piano_button"
         app:srcCompat="@drawable/piano"
@@ -33,6 +49,14 @@
         app:layout_constraintTop_toBottomOf="@+id/airhorn_button"
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/imagebutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/piano_button"
+        app:layout_constraintEnd_toEndOf="@id/piano_button"
+        app:layout_constraintTop_toBottomOf="@id/piano_button"
+        android:text="permanent"/>
 
     <ImageButton
         android:id="@+id/johnson_button"
@@ -43,4 +67,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/imagebutton"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/johnson_button"
+        app:layout_constraintEnd_toEndOf="@id/johnson_button"
+        app:layout_constraintTop_toBottomOf="@id/johnson_button"
+        android:text="transient can duck"/>
 </android.support.constraint.ConstraintLayout>
